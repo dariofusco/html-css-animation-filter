@@ -27,6 +27,7 @@
     width: 60px;
     height: 60px;
     background: red;
+    transition: ease-out 1s;
 }
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
@@ -90,4 +91,12 @@
 .ex-4-square:hover {
     background: none;
     transition: 1s;
+}
+
+.ex-5-square:hover {
+    height: 100px;
+    width: 100px;
+    transition: 1s;
+    padding: 0;
+    margin: 0;
 }
