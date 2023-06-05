@@ -100,3 +100,7 @@
     padding: 0;
     margin: 0;
 }
+
+.ex-6-img:hover {
+    filter: grayscale(1);
+}
