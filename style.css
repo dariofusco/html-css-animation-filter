@@ -135,8 +135,26 @@
     margin: 0;
 }
 
+.ex-11-icon:hover {
+    animation-name: ruota-orario;
+    animation-duration: 2s;
+}
+
 @keyframes ruota {
     0% {
         transform: rotate(1turn);
     }
+}
+
+@keyframes ruota-orario {
+    0% {
+        transform: rotate(0)
+    }
+    90% {
+        transform: rotate(300deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+    
 }
