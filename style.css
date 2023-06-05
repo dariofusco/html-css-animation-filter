@@ -140,6 +140,18 @@
     animation-duration: 2s;
 }
 
+.ex-12-button:hover .ex-12-top-white {
+    animation-name: sposta-destra;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation-name: sposta-sinistra;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
 @keyframes ruota {
     0% {
         transform: rotate(1turn);
@@ -157,4 +169,28 @@
         transform: rotate(0);
     }
     
+}
+
+@keyframes sposta-destra {
+    0% {
+        left: 20%;
+    }
+    50% {
+        left: 50%;
+    }
+    100% {
+        left: 10%;
+    }
+}
+
+@keyframes sposta-sinistra {
+    0% {
+        right: 10%;
+    }
+    50% {
+        right: 50%;
+    }
+    100% {
+        right: 20%;
+    }
 }
