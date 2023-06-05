@@ -152,6 +152,18 @@
     animation-timing-function: linear;
 }
 
+.ex-13-button:hover .ex-13-top-white {
+    animation-name: ruota-completa-top;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation-name: ruota-completa-bottom;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
 @keyframes ruota {
     0% {
         transform: rotate(1turn);
@@ -192,5 +204,51 @@
     }
     100% {
         right: 20%;
+    }
+}
+
+@keyframes ruota-completa-top {
+    0% {
+        top: -10px;
+        left: 10%;
+    }
+    25% {
+        top: -10px;
+        left: 70%;
+    }
+    50% {
+        top: 100%;
+        left: 70%;
+    }
+    75%{
+        top: 100%;
+        left: -10px;
+    }
+    100% {
+        top: -10px;
+        left: 10%;
+    }
+}
+
+@keyframes ruota-completa-bottom {
+    0% {
+        bottom: -10px;
+        right: 10%;
+    }
+    25% {
+        bottom: -10px;
+        right: 70%;
+    }
+    50% {
+        bottom: 100%;
+        right: 70%;
+    }
+    75%{
+        bottom: 100%;
+        right: -10px;
+    }
+    100% {
+        bottom: -10px;
+        right: 10%;
     }
 }
